@@ -1,7 +1,7 @@
 import pygame
 
 #creation de l'objet gameScreen
-class GameClass():
+class GameScreen():
     #Initialisation de l'objet gameScreen
 
     def __init__(self):
@@ -15,7 +15,7 @@ class GameClass():
 
         #configuration de l'écran 
         self.caption = pygame.display.set_caption("NSI Project")
-        self.link = "fr.gameproject/assets/background_WIP.png"
+        self.link = "Game/assets/background_WIP.png"
         self.image = pygame.image.load(self.link)
 
 

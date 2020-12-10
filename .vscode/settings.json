@@ -1,5 +1,2 @@
 {
-    "python.linting.pylintArgs": [
-        "--disable=W0312"
- ],
 }

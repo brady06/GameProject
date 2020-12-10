@@ -7,14 +7,14 @@ main scripte of game
 """
 import sys
 import pygame
-import gameClass.game
-import gameClass.screen
+import Game.gameClass.games as g
+import Game.gameClass.screen as s
 #super class entity de la super class Sprite de pygame
 
 #initialisation du jeu
 
-game = gameClass.game.Game()
-screen = gameClass.screen.GameScreen()
+game = g.Game()
+screen = s.GameScreen()
 CONTINUE = True
 #boucle de rendering
 while CONTINUE:
@@ -25,4 +25,4 @@ while CONTINUE:
             CONTINUE = False
             pygame.quit()
             sys.exit()
-    screen.blit(game.player.image, game.player.rect)
+    screen.blit(g.player.image, g.player.rect)

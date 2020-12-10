@@ -44,4 +44,3 @@ class Entity(pygame.sprite.Sprite):
         #si la position Y de l'entité n'est pas égale a la taille de l'écran, l'implémenté de velocity
         if self.rect.y != screen.getWidth:
             self.rect.y += self.velocity
-    
