@@ -22,26 +22,27 @@ class GameClass():
     def update(self):
         self.blit(self.image,(0,0))
 
-    #méthode pour la taille 
-    def getSize(self):
+    #méthode pour la taille
+    def get_size(self):
         return self.size
-    def setSize(self, newSize):
-        assert type(newSize) == tuple
-        self.size = newSize
+    def set_size(self, new_size):
+        assert new_size.isinstance(tuple)
+        self.size = new_size
         self.update()
-    
-    #méthode pour la hauteur de la fenêtre 
-    def getHeight(self):
+
+    #méthode pour la hauteur de la fenêtre
+    def get_height(self):
         return self.height
-    def setHeight(self, nHeight):
+    def set_height(self, nHeight):
         self.height=nHeight
-        self.setSize((nHeight, self.width))
+        self.set_size((nHeight, self.width))
     
     #méthode pour la largeur de la genêtre 
-    def getWidth(self):
+    def get_width(self):
         return self.width
-    def setWidth(self, nWidth):
+    def set_width(self, nWidth):
         self.width = nWidth
-        self.setSize((self.height, nWidth))
+        self.set_size((self.height, nWidth))
     def blit(self, subject, rect):
         self.mode.blit(subject, rect)
+        
